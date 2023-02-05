@@ -1,8 +1,10 @@
-$('#main-container').hover(
-    function(){
-        $('.sub-container').fadeIn(early);
-    }
-    ,function(){
-        $('.sub-container').fadeOut();
-    }
-);
+$(function(){
+    $('#main-container').hover(
+        function(){
+            $(this).find('.sub-container').addClass('sub-active');
+        }
+        ,function(){
+            $(this).find('.sub-container').removeClass('sub-active');
+        }
+    );
+});
