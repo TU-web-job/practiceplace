@@ -1,5 +1,5 @@
 $(function(){
-    $('#main-container').hover(
+    $('#container').hover(
         function(){
             $(this).find('.sub-container').addClass('sub-active');
         }
